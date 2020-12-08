@@ -1,6 +1,6 @@
 # Team_Profile_Generator
 
-[![github-follow](https://img.shields.io/github/followers/:user?label=Follow&logoColor=purple&style=social)](https://github.com/Nmenotti20) [![project-JavaScript-language](https://img.shields.io/static/v1?label=javascript&message=75%&color=yellow)](https://github.com/Nmenotti20/Team_Profile_Generator) [![project-html-language](https://img.shields.io/static/v1?label=html&message=25%&color=red)](https://github.com/Nmenotti20/Team_Profile_Generator) [![license](https://img.shields.io/badge/License-mit-brightgreen.svg)](https://choosealicense.com/licenses/mit/)
+[![github-follow](https://img.shields.io/github/followers/:Nmenotti20?label=Follow&logoColor=purple&style=social)](https://github.com/Nmenotti20) [![project-JavaScript-language](https://img.shields.io/static/v1?label=javascript&message=75%&color=yellow)](https://github.com/Nmenotti20/Team_Profile_Generator) [![project-html-language](https://img.shields.io/static/v1?label=html&message=25%&color=red)](https://github.com/Nmenotti20/Team_Profile_Generator) [![license](https://img.shields.io/badge/License-mit-brightgreen.svg)](https://choosealicense.com/licenses/mit/)
 
 ##### Version 1.0
 
