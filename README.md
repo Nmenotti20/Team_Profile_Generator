@@ -19,7 +19,7 @@ _____________________
 
 #### User Story
 
-_____________________
+As a <role> I can <capability>, so that <receive benefit>
 
 #### Project Links:
 
