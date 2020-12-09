@@ -23,6 +23,8 @@ As a <role> I can <capability>, so that <receive benefit>
 
 #### Project Links:
 
+[Live Deployed URL](https://nmenotti20.github.io/Team_Profile_Generator)<br>
+
 [GitHub Repo](https://github.com/Nmenotti20/Team_Profile_Generator)<br>
 
 ![Video Demo](/Assets/Video_Demo.gif)<br>
