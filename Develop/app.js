@@ -9,25 +9,30 @@ const OUTPUT_DIR = path.resolve(__dirname, "output");
 const outputPath = path.join(OUTPUT_DIR, "team.html");
 
 const render = require("./lib/htmlRenderer");
-
+const questions = require("./lib/questions");
 
 // Write code to use inquirer to gather information about the development team members,
 // and to create objects for each team member (using the correct classes as blueprints!)
 
-inquirer.prompt()
+inquirer.prompt(starterQuestions);
 
 
 // After the user has input all employees desired, call the `render` function (required
 // above) and pass in an array containing all employee objects; the `render` function will
 // generate and return a block of HTML including templated divs for each employee!
 
-inquirer.prompt([
-    {
-    type: '',
-        name: '',
-        message: ''
+function internQuestions(){     
+inquirer.prompt(internQuestions);
 }
-])
+
+function managerQuestions(){
+inquirer.prompt(managerQuestions);
+}
+
+function internQuestions(){
+    inquirer.prompt(internQuestions);
+    }
+    
 
 // After you have your html, you're now ready to create an HTML file using the HTML
 // returned from the `render` function. Now write it to a file named `team.html` in the
@@ -39,7 +44,7 @@ function init() {
     inquirer.prompt(questions).then((answers)=> {
         console.log("This is what you answered...", answers);
         const fs = require('fs');
-        fs.writeFile('index.html', generateDocument(answers), (err) =>
+        fs.writeFile('output.html', generateDocument(answers), (err) =>
         err ? 
         console.log(err) : console.log ('SUCCESS!!! Your html content has been generated to the index.html file!')
         )
