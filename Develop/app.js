@@ -125,7 +125,13 @@ const engineerQuestions = [
 // Write code to use inquirer to gather information about the development team members,
 // and to create objects for each team member (using the correct classes as blueprints!)
 
-inquirer.prompt(starterQuestions);
+inquirer.prompt(starterQuestions).then((answers) => {
+    //do something with answers
+    
+    
+    //  create a class instance and push to array?
+
+});
 
 
 // After the user has input all employees desired, call the `render` function (required
