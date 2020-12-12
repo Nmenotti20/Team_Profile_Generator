@@ -5,11 +5,122 @@ const inquirer = require("inquirer");
 const path = require("path");
 const fs = require("fs");
 
-const OUTPUT_DIR = path.resolve(__dirname, "output");
-const outputPath = path.join(OUTPUT_DIR, "team.html");
+const TEAM_ROSTER_DIR = path.resolve(__dirname, "TEAM_ROSTER");
+const outputPath = path.join(TEAM_ROSTER_DIR, "output.html");
 
 const render = require("./lib/htmlRenderer");
-const questions = require("./lib/questions");
+//const questions = require("./lib/questions");
+
+// Engineer Questions *********************************************************************************
+const engineerQuestions = [
+
+    // Employee Name
+    {
+        type: 'input',
+        message: 'What is your full name?',
+        name: 'name',
+       },
+   
+    // Employee ID
+    {
+        type: 'input',
+        message: 'What is your 3 digit employee id number?',
+        name: 'id',
+       },
+   
+    // Email
+    {
+        type: 'input',
+        message: 'What is your email address?',
+        name: 'email',
+       },
+
+    // GitHub
+    {
+        type: 'input',
+        message: 'What is your GitHub username?',
+        name: 'github',
+       },
+    ]
+    
+    // Manager Questions****************************************************************
+    const managerQuestions = [
+    {
+        type: 'input',
+        message: 'What is your full name?',
+        name: 'name',
+       },
+   
+    // Employee ID
+    {
+        type: 'input',
+        message: 'What is your 3 digit employee id number?',
+        name: 'id',
+       },
+   
+    // Email
+    {
+        type: 'input',
+        message: 'What is your email address?',
+        name: 'email',
+       },
+
+    // Office Number
+    {
+        type: 'input',
+        message: 'What is your office number?',
+        name: 'officeNumber',
+       },
+
+    ]
+
+    // Intern Questions*********************************************************************************
+    const internQuestions = [
+        {
+            type: 'input',
+            message: 'What is your full name?',
+            name: 'name',
+           },
+       
+        // Employee ID
+        {
+            type: 'input',
+            message: 'What is your 3 digit employee id number?',
+            name: 'id',
+           },
+       
+        // Email
+        {
+            type: 'input',
+            message: 'What is your email address?',
+            name: 'email',
+           },
+    
+        // School
+        {
+            type: 'input',
+            message: 'What school did you go to?',
+            name: 'school',
+           },
+        
+    ]
+
+    const starterQuestions = [
+    {
+        type: 'list',
+        message: 'What what you like to do?',
+        name: 'action',
+        choices: ['Add employee', 'Do nothing']
+       },
+   
+    //    Job Roll*************************************************************************
+    {
+        type: 'list',
+        message: 'What is the employee role?',
+        name: 'role',
+        choices: ['Employee', 'Manager', 'Engineer', 'Intern']
+       },
+    ]
 
 // Write code to use inquirer to gather information about the development team members,
 // and to create objects for each team member (using the correct classes as blueprints!)
@@ -21,17 +132,17 @@ inquirer.prompt(starterQuestions);
 // above) and pass in an array containing all employee objects; the `render` function will
 // generate and return a block of HTML including templated divs for each employee!
 
-function internQuestions(){     
-inquirer.prompt(internQuestions);
-}
-
-function managerQuestions(){
-inquirer.prompt(managerQuestions);
-}
-
-function internQuestions(){
+function buildInternQuestions(){     
     inquirer.prompt(internQuestions);
-    }
+}
+
+function buildManagerQuestions(){
+    inquirer.prompt(managerQuestions);
+}
+
+function buildEngineerQuestions(){
+    inquirer.prompt(engineerQuestions);
+}
     
 
 // After you have your html, you're now ready to create an HTML file using the HTML
