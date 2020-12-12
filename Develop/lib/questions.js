@@ -56,7 +56,7 @@ const engineerQuestions = [
     {
         type: 'input',
         message: 'What is your office number?',
-        name: 'office',
+        name: 'officeNumber',
        },
 
     ]
@@ -108,8 +108,5 @@ const engineerQuestions = [
         choices: ['Employee', 'Manager', 'Engineer', 'Intern']
        },
     ]
-
-
-
 
 module.exports = questions;

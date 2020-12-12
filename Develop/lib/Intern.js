@@ -9,7 +9,7 @@ class Employee {
       getRole() {
         return "Intern";
       }
-      getGithub() {
+      getSchool() {
           return this.school;
       }
     }
