@@ -1,226 +1,32 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
-  <head>
-    <!-- Required meta tags -->
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
 
-    <!-- Bootstrap CSS -->
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1" crossorigin="anonymous">
-    
-    <title>Team Roster</title>
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>My Team</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/c502137733.js"></script>
+</head>
 
-    <!-- CSS Style -->
-    <link rel="stylesheet" href="../../Assets/style.css">
-  
-    <!-- Fontawesome link -->
-    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
-  </head>
-
-  <body>
-  <!-- Body container -->  
-  <div class="container-fluid bg-danger" id="body">
-
-  <!-- Jumbotron -->
-  <div class="container-fluid bg-warning text-dark">
-    <div class="row">
-      <div class="col-12 jumbotron mb-3 team-heading" id="jumbotron">
-          <h1 class="text-center">TEAM ROSTER</h1>
-      </div>
+<body>
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-12 jumbotron mb-3 team-heading">
+                <h1 class="text-center">My Team</h1>
+            </div>
+        </div>
     </div>
-  </div>
-
-  <!-- Cards Container -->
-  <div class="container-fluid">
-    
-  <!-- First row -->
-    <div class="row justify-content-lg-center">
-      <div class="col-sm">
-
-      <!-- Info Card Manager -->    
-      <div class="card employee-card bg-info text-white" style="height: 22rem" id="card">
-        <div class="card-header" style="height: 12rem">
-            <h2 class="card-title">Wyatt Earp</h2>
-            <h3 class="card-title"><i class="fas fa-mug-hot mr-2"></i><br>Manager</h3>
+    <div class="container">
+        <div class="row">
+            <div class="team-area col-12 d-flex justify-content-center">
+                
+            </div>
         </div>
-        <div class="card-body">
-            <ul class="list-group bg-light text-dark">
-              <li class="list-group-item">ID: 1848</li>
-              <li class="list-group-item">Email: <a href="mailto:w.earp.doe@sample.com">w.earp@whatevs.com</a></li>
-              <li class="list-group-item">Office number: 1898</li>
-            </ul>
-        </div>
-      </div>
-
     </div>
-
-      <div class="col-sm">
-
-      <!-- Info Card Engineer -->
-      <div class="card employee-card bg-info text-white" style="height: 22rem" id="card">
-        <div class="card-header" style="height: 12rem">
-            <h2 class="card-title">"Doc" Holliday</h2>
-            <h3 class="card-title"><i class="fas fa-glasses mr-2"></i><br>Engineer</h3>
-        </div>
-        <div class="card-body">
-            <ul class="list-group bg-light text-dark">
-                <li class="list-group-item">ID: 1851</li>
-                <li class="list-group-item">Email: <a href="mailto:j.holliday@whatevs.com">j.holliday@whatevs.com</a></li>
-                <li class="list-group-item">GitHub: <a href="https://github.com/j.holliday" target="_blank" rel="noopener noreferrer">j.holliday</a></li>
-            </ul>
-        </div>
-      </div>
-
-      </div>
-
-      <div class="col-sm">
-
-      <!-- Info Card Intern -->
-      <div class="card employee-card bg-info text-white" style="height: 22rem" id="card">
-        <div class="card-header" style="height: 12rem">
-            <h2 class="card-title">Curly Bill Brocius</h2>
-            <h3 class="card-title"><i class="fas fa-user-graduate mr-2"></i><br>Intern</h3>
-        </div>
-        <div class="card-body">
-            <ul class="list-group bg-light text-dark">
-                <li class="list-group-item">ID: 1845</li>
-                <li class="list-group-item">Email: <a href="mailto:c.brocius@whatevs.com">c.brocius@whatevs.com</a></li>
-                <li class="list-group-item">School: Hard Knocks</li>
-            </ul>
-        </div>
-      </div>
-
-      </div>
-
-      <div class="col-sm">
-
-      <!-- Info Card Intern -->
-      <div class="card employee-card bg-info text-white" style="height: 22rem" id="card">
-        <div class="card-header" style="height: 12rem">
-            <h2 class="card-title">Curly Bill Brocius</h2>
-            <h3 class="card-title"><i class="fas fa-user-graduate mr-2"></i><br>Intern</h3>
-        </div>
-        <div class="card-body">
-            <ul class="list-group bg-light text-dark">
-                <li class="list-group-item">ID: 1845</li>
-                <li class="list-group-item">Email: <a href="mailto:c.brocius@whatevs.com">c.brocius@whatevs.com</a></li>
-                <li class="list-group-item">School: Hard Knocks</li>
-            </ul>
-        </div>
-      </div>
-
-      </div>
-
-      <div class="col-sm">
-
-      <!-- Info Card Intern -->
-      <div class="card employee-card bg-info text-white" style="height: 22rem" id="card">
-        <div class="card-header" style="height: 12rem">
-            <h2 class="card-title">Curly Bill Brocius</h2>
-            <h3 class="card-title"><i class="fas fa-user-graduate mr-2"></i><br>Intern</h3>
-        </div>
-        <div class="card-body">
-            <ul class="list-group bg-light text-dark">
-                <li class="list-group-item">ID: 1845</li>
-                <li class="list-group-item">Email: <a href="mailto:c.brocius@whatevs.com">c.brocius@whatevs.com</a></li>
-                <li class="list-group-item">School: Hard Knocks</li>
-            </ul>
-        </div>
-      </div>
-
-      </div>
-
-      <div class="col-sm">
-
-      <!-- Info Card Intern -->
-      <div class="card employee-card bg-info text-white" style="height: 22rem" id="card">
-        <div class="card-header" style="height: 12rem">
-            <h2 class="card-title">Curly Bill Brocius</h2>
-            <h3 class="card-title"><i class="fas fa-user-graduate mr-2"></i><br>Intern</h3>
-        </div>
-        <div class="card-body">
-            <ul class="list-group bg-light text-dark">
-                <li class="list-group-item">ID: 1845</li>
-                <li class="list-group-item">Email: <a href="mailto:c.brocius@whatevs.com">c.brocius@whatevs.com</a></li>
-                <li class="list-group-item">School: Hard Knocks</li>
-            </ul>
-        </div>
-      </div>
-
-      </div>
-
-      <div class="col-sm">
-
-      <!-- Info Card Intern -->
-      <div class="card employee-card bg-info text-white" style="height: 22rem" id="card">
-        <div class="card-header" style="height: 12rem">
-            <h2 class="card-title">Curly Bill Brocius</h2>
-            <h3 class="card-title"><i class="fas fa-user-graduate mr-2"></i><br>Intern</h3>
-        </div>
-        <div class="card-body">
-            <ul class="list-group bg-light text-dark">
-                <li class="list-group-item">ID: 1845</li>
-                <li class="list-group-item">Email: <a href="mailto:c.brocius@whatevs.com">c.brocius@whatevs.com</a></li>
-                <li class="list-group-item">School: Hard Knocks</li>
-            </ul>
-        </div>
-      </div>
-
-      </div>
-
-      <div class="col-sm">
-
-      <!-- Info Card Intern -->
-      <div class="card employee-card bg-info text-white" style="height: 22rem" id="card">
-        <div class="card-header" style="height: 12rem">
-            <h2 class="card-title">Curly Bill Brocius</h2>
-            <h3 class="card-title"><i class="fas fa-user-graduate mr-2"></i><br>Intern</h3>
-        </div>
-        <div class="card-body">
-            <ul class="list-group bg-light text-dark">
-                <li class="list-group-item">ID: 1845</li>
-                <li class="list-group-item">Email: <a href="mailto:c.brocius@whatevs.com">c.brocius@whatevs.com</a></li>
-                <li class="list-group-item">School: Hard Knocks</li>
-            </ul>
-        </div>
-      </div>
-
-      </div>
-
-      <div class="col-sm">
-
-      <!-- Info Card Intern -->
-      <div class="card employee-card bg-info text-white" style="height: 22rem" id="card">
-        <div class="card-header" style="height: 12rem">
-            <h2 class="card-title">Curly Bill Brocius</h2>
-            <h3 class="card-title"><i class="fas fa-user-graduate mr-2"></i><br>Intern</h3>
-        </div>
-        <div class="card-body">
-            <ul class="list-group bg-light text-dark">
-                <li class="list-group-item">ID: 1845</li>
-                <li class="list-group-item">Email: <a href="mailto:c.brocius@whatevs.com">c.brocius@whatevs.com</a></li>
-                <li class="list-group-item">School: Hard Knocks</li>
-            </ul>
-        </div>
-      </div>
-
-      </div>  
-
-      </div>
-
-    </div>
-
-    <div class="card-body" id="footer">
-      <blockquote class="blockquote mb-0 text-center bg-warning text-dark">
-        <p>Brought to you by:</p>
-        <footer class="blockquote-footer">Nick Menotti</footer>
-      </blockquote>
-    </div>
-  </div>
-</div>
-
-<!-- Bootstrap Bundle with Popper -->
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-ygbV9kiqUc6oa4msXn9868pTtWMgiQaeYH7/t7LECLbyPA2x65Kgf80OJFdroafW" crossorigin="anonymous"></script>
-
 </body>
+
 </html>
