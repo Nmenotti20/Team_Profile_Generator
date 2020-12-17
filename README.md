@@ -1,6 +1,6 @@
 # Team_Profile_Generator
 
-[![GitHub followers](https://img.shields.io/github/followers/Nmenotti20?label=Follow&style=social)](https://github.com/Nmenotti20) [![project-JavaScript-language](https://img.shields.io/static/v1?label=javascript&message=75%&color=yellow)](https://github.com/Nmenotti20/Team_Profile_Generator) [![project-html-language](https://img.shields.io/static/v1?label=html&message=25%&color=red)](https://github.com/Nmenotti20/Team_Profile_Generator) [![license](https://img.shields.io/badge/License-mit-brightgreen.svg)](https://choosealicense.com/licenses/mit/)
+[![GitHub followers](https://img.shields.io/github/followers/Nmenotti20?label=Follow&style=social)](https://github.com/Nmenotti20) [![project-JavaScript-language](https://img.shields.io/static/v1?label=javascript&message=72.1%&color=yellow)](https://github.com/Nmenotti20/Team_Profile_Generator) [![project-html-language](https://img.shields.io/static/v1?label=html&message=27.6%&color=red)](https://github.com/Nmenotti20/Team_Profile_Generator) [![license](https://img.shields.io/badge/License-mit-brightgreen.svg)](https://choosealicense.com/licenses/mit/)
 
 ##### Version 1.0
 
@@ -23,9 +23,7 @@ As a manager
 I want to generate a webpage that displays my team's basic info
 so that I have quick access to emails and GitHub profiles
 
-#### Project Links:
-
-[Live Deployed URL](https://nmenotti20.github.io/Team_Profile_Generator)<br>
+#### Project Links
 
 [GitHub Repo](https://github.com/Nmenotti20/Team_Profile_Generator)<br>
 
@@ -37,8 +35,7 @@ so that I have quick access to emails and GitHub profiles
 
 ### Installation
 
-_______________
-
+Navigate to the "Develop" Directory and from the terminal run "node app.js" to start the question sequence.  Follow the questions and submit answers by hitting enter. You may add as many members to the team roster as you like. To view the roster output, navigate to the "output" directory and open the team.html file in the browser.  You should see the team you have built populated on the team.html page in an easy to view format.  
 ### Usage
 
 The project must prompt the user to build an engineering team. An engineering team consists of a manager, and any number of engineers and interns.
@@ -57,7 +54,7 @@ The project must generate a team.html page in the output directory, that display
 
 Special thanks to the following resources that inspired this project:
 
-https://www.codesprogram.com/web-icon/font-awesome-mug-hot-icon, https://youtu.be/PFmuCDHHpwk/, https://www.npmjs.com/, https://medium.com/javascript-in-plain-english/how-to-inquirer-js-c10a4e05ef1f/ 
+<https://youtu.be/PFmuCDHHpwk/>, <https://www.npmjs.com/>, <https://medium.com/javascript-in-plain-english/how-to-inquirer-js-c10a4e05ef1f/>
 
 ### Command to Test
 
@@ -71,7 +68,7 @@ This project is [mit](https://choosealicense.com/licenses/mit) licensed.<br>
 
 <hr>
 <p align='center'><i>
-Copyright © 2020 [Nick Menotti]<br> 
+Copyright © 2020 [Nick Menotti]<br>
 
 <p align='center'><i>
 Please contact me for additional information:<br>
