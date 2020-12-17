@@ -57,7 +57,7 @@ The project must generate a team.html page in the output directory, that display
 
 Special thanks to the following resources that inspired this project:
 
-https://www.codesprogram.com/web-icon/font-awesome-mug-hot-icon, https://youtu.be/PFmuCDHHpwk/, https://www.npmjs.com/
+https://www.codesprogram.com/web-icon/font-awesome-mug-hot-icon, https://youtu.be/PFmuCDHHpwk/, https://www.npmjs.com/, https://medium.com/javascript-in-plain-english/how-to-inquirer-js-c10a4e05ef1f/ 
 
 ### Command to Test
 

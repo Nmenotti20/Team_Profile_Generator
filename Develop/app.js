@@ -5,15 +5,17 @@ const inquirer = require("inquirer");
 const path = require("path");
 const fs = require("fs");
 
-// const TEAM_ROSTER_DIR = path.resolve(__dirname, "TEAM_ROSTER");
-// const outputPath = path.join(TEAM_ROSTER_DIR, "./TEAM_ROSTER/output.html");
+// Identify the directory and outputPath to render on ".output/team.html".
 const OUTPUT_DIR = path.resolve(__dirname, "output")
 const outputPath = path.join(OUTPUT_DIR, "team.html");
 
+// Require "./lib/htmlRenderer".
 const render = require('./lib/htmlRenderer');
 
+// Define employees
 let employees = [];
 
+// Array of newManagerQuestions
 const newManagerQuestions = [{
         type: "input",
         name: "name",
@@ -64,6 +66,7 @@ const newManagerQuestions = [{
     },
 ];
 
+// Array of newEngineerQuestions
 const newEngineerQuestions = [{
     type: "input",
     name: "name",
@@ -107,6 +110,7 @@ const newEngineerQuestions = [{
 },
 ];
 
+// Array of newInternQuestions
 const newInternQuestions = [{
     type: "input",
     name: "name",
@@ -144,7 +148,7 @@ const newInternQuestions = [{
     },
 },
 {
-    type: "input",
+    type: "list",
     name: "school",
     message: "What is your Intern's school?",
     choices: [
@@ -156,6 +160,7 @@ const newInternQuestions = [{
 },
 ];
 
+// Use inquirer.prompt to addMoreEmployees if the user wants selects to add another employee or else, quit to stop adding employees to the roster. 
 const addMoreEmployees = () => {
     inquirer.prompt([{
         type: "list",
@@ -165,8 +170,10 @@ const addMoreEmployees = () => {
             "Engineer",
             "Intern",
             "Manager",
-            "No More"
+            "Quit"
         ]
+
+    // Use switch statment to determine which set os subquestions to sequence through based on the selection of the employee role.  
     }]).then((answer) => {
         switch (answer.myChoice) {
             case "Engineer":
@@ -185,6 +192,7 @@ const addMoreEmployees = () => {
     });
 }
 
+// If "manager" is selected, sequence through the newManagerQuestions array.
 const createManager = () => {
     inquirer.prompt(newManagerQuestions).then((answers) => {
         console.log("manager answers: ", answers);
@@ -197,6 +205,7 @@ const createManager = () => {
     });
 };
 
+// If "engineer" is selected, sequence through the newEngineerQuestions array.
 const createEngineer = () => {
     inquirer.prompt(newEngineerQuestions).then((answers) => {
         console.log("Engineer answers: ", answers);
@@ -209,6 +218,7 @@ const createEngineer = () => {
     });
 };
 
+// If "intern" is selected, sequence through the newInternQuestions array.
 const createIntern = () => {
     inquirer.prompt(newInternQuestions).then((answers) => {
         console.log("Intern answers: ", answers);
@@ -221,4 +231,5 @@ const createIntern = () => {
     });
 };
 
+// Call the function createManager
 createManager();
