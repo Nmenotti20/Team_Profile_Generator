@@ -57,11 +57,11 @@ The project must generate a team.html page in the output directory, that display
 
 Special thanks to the following resources that inspired this project:
 
-https://www.codesprogram.com/web-icon/font-awesome-mug-hot-icon, https://youtu.be/0WfDe51pUU0/, https://youtu.be/PFmuCDHHpwk/, https://github.com/imbingz/Github-Readme-Template/, https://github.com/Jruuuu/readmegen/
+https://www.codesprogram.com/web-icon/font-awesome-mug-hot-icon, https://youtu.be/PFmuCDHHpwk/, https://www.npmjs.com/
 
 ### Command to Test
 
-____________
+npm run test
 
 ### License
 
