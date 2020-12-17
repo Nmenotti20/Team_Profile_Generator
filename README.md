@@ -54,7 +54,11 @@ The project must generate a team.html page in the output directory, that display
 
 Special thanks to the following resources that inspired this project:
 
-<https://youtu.be/PFmuCDHHpwk/>, <https://www.npmjs.com/>, <https://medium.com/javascript-in-plain-english/how-to-inquirer-js-c10a4e05ef1f/>
+<ul>
+<li> [Object-oriented Programming in JavaScript: Made Super Simple | Mosh]<https://youtu.be/PFmuCDHHpwk/>, </li>
+<li> [https://www.npmjs.com]<https://www.npmjs.com/>, </li>
+<li> [https://medium.com/javascript-in-plain-english/how-to-inquirer-js-c10a4e05ef1f]<https://medium.com/javascript-in-plain-english/how-to-inquirer-js-c10a4e05ef1f/> </li>
+</ul>
 
 ### Command to Test
 
