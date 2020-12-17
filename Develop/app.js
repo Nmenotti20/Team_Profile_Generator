@@ -17,39 +17,88 @@ let employees = [];
 const newManagerQuestions = [{
         type: "input",
         name: "name",
-        message: "What is your manager's name?"
+        message: "What is your manager's name?",
+        validate: name => {
+			let pass = name.match(/^[a-zA-Z]+ [a-zA-Z]+$/g);
+			if (pass) {
+				return true;
+			}
+			return 'Are you messing with me? Please enter a valid full name.';
+		},
     },
     {
         type: "input",
         name: "id",
-        message: "What is your manager's id?"
+        message: "What is your manager's id?",
+        validate: id => {
+			let pass = id.match(/^[0-9a-zA-Z]+$/g);
+			if (pass) {
+				return true;
+			}
+			return 'C-Mon man! Give me a valid ID.';
+		},
     },
     {
         type: "input",
-        name: "id",
-        message: "What is your manager's email?"
+        name: "email",
+        message: "What is your manager's email?",
+        validate: email => {
+            let pass = email.match(/\S+@\S+\.\S+/g);
+            if (pass) {
+                return true;
+            }
+            return 'NICE TRY SLICK! Please enter a valid email address.';
+        },
     },
     {
         type: "input",
         name: "officeNumber",
-        message: "What is your manager's office number?"
+        message: "What is your manager's office number?",
+		validate: officeNumber => {
+			let pass = officeNumber.match(/^[0-9]+$/g);
+			if (pass) {
+				return true;
+			}
+			return 'Does this manager really even work here? Please enter a valid office number.';
+		},
     },
 ];
 
 const newEngineerQuestions = [{
     type: "input",
     name: "name",
-    message: "What is your Engineer's name?"
+    message: "What is your Engineer's name?",
+    validate: name => {
+        let pass = name.match(/^[a-zA-Z]+ [a-zA-Z]+$/g);
+        if (pass) {
+            return true;
+        }
+        return 'Are you messing with me? Please enter a valid full name.';
+    },
 },
 {
     type: "input",
     name: "id",
-    message: "What is your Engineer's id?"
+    message: "What is your Engineer's id?",
+    validate: id => {
+        let pass = id.match(/^[0-9a-zA-Z]+$/g);
+        if (pass) {
+            return true;
+        }
+        return 'C-Mon man! Give me a valid ID.';
+    },
 },
 {
     type: "input",
-    name: "id",
-    message: "What is your Engineer's email?"
+    name: "email",
+    message: "What is your Engineer's email?",
+    validate: email => {
+        let pass = email.match(/\S+@\S+\.\S+/g);
+        if (pass) {
+            return true;
+        }
+        return 'NICE TRY SLICK! Please enter a valid email address.';
+    },
 },
 {
     type: "input",
@@ -61,22 +110,49 @@ const newEngineerQuestions = [{
 const newInternQuestions = [{
     type: "input",
     name: "name",
-    message: "What is your Intern's name?"
+    message: "What is your Intern's name?",
+    validate: name => {
+        let pass = name.match(/^[a-zA-Z]+ [a-zA-Z]+$/g);
+        if (pass) {
+            return true;
+        }
+        return 'Are you messing with me? Please enter a valid full name.';
+    },
 },
 {
     type: "input",
     name: "id",
-    message: "What is your Intern's id?"
+    message: "What is your Intern's id?",
+    validate: id => {
+        let pass = id.match(/^[0-9a-zA-Z]+$/g);
+        if (pass) {
+            return true;
+        }
+        return 'C-Mon man! Give me a valid ID.';
+    },
 },
 {
     type: "input",
-    name: "id",
-    message: "What is your Intern's email?"
+    name: "email",
+    message: "What is your Intern's email?",
+    validate: email => {
+        let pass = email.match(/\S+@\S+\.\S+/g);
+        if (pass) {
+            return true;
+        }
+        return 'NICE TRY SLICK! Please enter a valid email address.';
+    },
 },
 {
     type: "input",
     name: "school",
-    message: "What is your Intern's school?"
+    message: "What is your Intern's school?",
+    choices: [
+        "UCSD",
+        "Massachusetts Institute of Technology",
+        "San Diego State University",
+        "School of Hard Kocks"
+    ]
 },
 ];
 
@@ -147,113 +223,7 @@ const createIntern = () => {
 
 createManager();
 
-// Starter Questions *****************************************************************************************    
-const starterQuestions = [
-
-    // Choose to Add EE or Do Nothing
-    {
-        type: 'list',
-        message: 'What what you like to do?',
-        name: 'employees',
-        choices: ['Add employee', 'cancel'],
-        validate: employees => {
-            if (employees) {
-                return true;
-            }
-            return (questions);
-        }
-    },
-
-]
-
-const questions = [
-
-    // Employee Name
-    {
-        type: 'input',
-        message: 'What is your full name?',
-        name: 'name',
-    },
-
-    // Employee ID
-    {
-        type: 'input',
-        message: 'What is your 3 digit employee id number?',
-        name: 'id',
-    },
-
-    // Email
-    {
-        type: 'input',
-        message: 'Enter the employee email address:',
-        name: 'email',
-        validate: email => {
-            let pass = email.match(/\S+@\S+\.\S+/g);
-            if (pass) {
-                return true;
-            }
-
-            return 'NICE TRY SLICK! Please enter a valid email address.';
-        },
-    },
-
-    // Job Roll
-    {
-        type: 'list',
-        message: 'What is the employee role?',
-        name: 'role',
-        choices: ['Manager', 'Engineer', 'Intern']
-    },
-
-    // Engineer Questions *********************************************************************************
-
-    // GitHub
-    {
-        type: 'input',
-        message: 'What is your GitHub username?',
-        name: 'github',
-        when: answers => {
-            return answers.role === 'Engineer';
-        },
-    },
-
-
-    // Manager Questions****************************************************************
-
-    // Office Number
-    {
-        type: 'input',
-        message: 'What is your office number?',
-        name: 'officeNumber',
-        when: answers => {
-            return answers.role === 'Manager';
-        },
-    },
-
-    // Intern Questions*********************************************************************************
-    // School
-    {
-        type: 'input',
-        message: 'What school did you go to?',
-        name: 'school',
-        when: answers => {
-            return answers.role === 'Intern';
-        },
-    },
-
-
-    // Ask if you want to add another employee to the roster
-    {
-        type: 'confirm',
-        name: 'adding',
-        message: 'Would you like to add another employee to the TEAM_ROSTER?',
-        deault: true
-    }
-];
-
-// module.exports = questions;
-
-// Create Class Instance and push to an array*******************************************************
+//******************************************************************************************************************************************************************************************************************************************************************************************************************************* */
 //Async ... await
 async function init() {
     // Try
