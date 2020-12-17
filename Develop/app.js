@@ -155,7 +155,7 @@ const newInternQuestions = [{
         "UCSD",
         "Massachusetts Institute of Technology",
         "San Diego State University",
-        "School of Hard Kocks"
+        "School of Hard Knocks"
     ]
 },
 ];
